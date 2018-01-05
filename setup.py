@@ -54,8 +54,8 @@ setup(
                 'to audio files',
     license='MIT',
     keywords="spotify ripper mp3 ogg vorbis flac opus acc mp4 m4a",
-    url='https://github.com/jrnewell/spotify-ripper',
-    download_url='https://github.com/jrnewell/spotify-ripper/tarball/2.9.1',
+    url='https://github.com/tomcorby/spotify-ripper',
+    download_url='https://github.com/tomcorby/spotify-ripper/archive/master.tar.gz',
     classifiers=[
         'Topic :: Multimedia :: Sound/Audio',
         'Topic :: Multimedia :: Sound/Audio :: Capture/Recording',
