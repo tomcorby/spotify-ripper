@@ -619,6 +619,8 @@ class Ripper(threading.Thread):
 
         def truncate_file_name(file_name):
             tokens = file_name.rsplit(os.extsep, 1)
+            print file_name;
+            print tokens[1];
             if len(tokens) > 1:
                 tokens[0] = truncate(tokens[0], 255 - len(tokens[1]) - 1)
             else:
