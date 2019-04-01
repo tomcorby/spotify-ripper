@@ -409,6 +409,8 @@ class Ripper(threading.Thread):
             return iter([])
 
         link = self.session.get_link(uri)
+        print('Link check')
+        print(link)
         if link.type == spotify.LinkType.TRACK:
             track = link.as_track()
             return iter([track])
@@ -429,6 +431,8 @@ class Ripper(threading.Thread):
 
             print('Loading playlist...')
             self.current_playlist.load()
+            print('Playlist loaded')
+            print(self.current_playlist.tracks)
             return iter(self.current_playlist.tracks)
         elif link.type == spotify.LinkType.STARRED:
             link_user = link.as_user()
